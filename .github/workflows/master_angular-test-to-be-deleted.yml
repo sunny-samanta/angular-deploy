@@ -26,7 +26,7 @@ jobs:
           npm install
           npm run build --prod
           
-      - name : Zip Artifacts
+      - name: Zip Artifacts
         run: zip release.zip ./* -r
       
       - name: Upload artifact for deployment job
